@@ -1,10 +1,10 @@
 def insert_at_k_position(arr, k, elemenet):
-    if k < 0 or k > my_len(arr):
+    if k < 0 or k > len(arr):
         return f"Invalid Position"
     
-    new_arr = [0] * (my_len(arr) + 1)
+    new_arr = [0] * (len(arr) + 1)
 
-    for i in range(my_len(arr)+1):
+    for i in range(len(arr)+1):
         if i < k:
             new_arr[i] = arr[i]
         elif i == k:
