@@ -1,10 +1,3 @@
-def my_len(arr):
-    count = 0
-    for i in arr:
-        count = count + 1
-    return count    
-
-
 def insert_at_k_position(arr, k, elemenet):
     if k < 0 or k > my_len(arr):
         return f"Invalid Position"
